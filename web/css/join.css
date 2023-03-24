@@ -1,0 +1,194 @@
+/* 大图banner区域设置
+1、设置上内边距
+2、设置图片标签为行标签，用于控制宽高与位置
+3、设置标签外边距，作用为网页内左右自动居中
+*/
+
+.banner {
+    padding-top: 140px;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*优势信息整体区域设置
+1、设置区域宽度100% 
+ */
+
+.full-screen {
+    width: 100%;
+}
+
+
+/* 为什么选择我们模块区域中的大标题设置
+1、设置字体大小与颜色
+2、文字在区域内居中
+3、设置上外边距，主要控制与banner区域的留白距离
+ */
+
+.why>h1 {
+    font-size: 26px;
+    color: #50cffe;
+    text-align: center;
+    margin-top: 26px;
+}
+
+
+/* 为什么选择我们模块区域中的小标题设置
+1、设置字体大小与颜色
+2、文字在区域内居中
+3、设置上外边距，主要控制与大标题区域的留白距离
+ */
+
+.why>h2 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 1rem;
+}
+
+
+/* 为什么选择我们模块区域中的具体信息设置
+1、设置字体大小与颜色
+2、设置段落文字缩紧2自负
+3、设置上外边距，主要控制段落区域间的距离
+ */
+
+.why>p {
+    font-size: 15px;
+    color: #000;
+    text-indent: 2em;
+    margin: 15px 0;
+}
+
+
+/* 为什么选择我们模块区域中的加粗信息设置
+1、设置字体大小与颜色
+2、设置右内边距
+ */
+
+.why>p>strong {
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+
+/* 犀牛付代理商特权模块区域中的小标题信息设置
+1、设置字体大小与颜色
+2、设置行高
+3、设置左内边距
+4、设置内容溢出隐藏
+ */
+
+.daili>h2 {
+    position: relative;
+    height: 18px;
+    line-height: 2rem;
+    padding-left: 2rem;
+    overflow: hidden;
+}
+
+
+/* 犀牛付代理商特权模块区域中的提示信息设置
+1、设置span标签为行标签，用于设置宽高
+ */
+
+.daili>h2>span {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+
+/*  犀牛付代理商特权模块区域中的小标题前的图标设置
+1、使用背景图并设置不重复
+2、设置背景大小
+ */
+
+h2.join_pt>span {
+    background: url("../images/join_1.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_yz>span {
+    background: url("../images/join_2.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_cy>span {
+    background: url("../images/join_3.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_quyu>span {
+    background: url("../images/join_4.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_sj>span {
+    background: url("../images/join_5.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 设置如何加盟犀牛付模块整体区域
+1、外边距设置，主要控制该区域的位置
+*/
+
+.row {
+    margin-top: 1.5rem;
+    margin-bottom: 16rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/* 设置如何加盟犀牛付模块每个步骤区域样式
+1、设置区域间向左排列
+2、设置每个区域宽度占整体的25%
+3、设置绝对定位，主要用于其中的图片排放
+4、设置区域盒子宽高继承取决与边框盒子
+*/
+
+.row .col {
+    float: left;
+    width: 25%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* 设置如何加盟犀牛付模块中的图片样式*/
+
+.row .col>img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* 设置如何加盟犀牛付模块标题样式
+1、设置字体大小与颜色
+2、设置文字在区域内居中
+*/
+
+.row .col>h1 {
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* 设置如何加盟犀牛付模块中指定图片的样式
+1、设置相对定位，控制图片位置
+*/
+
+.row .col>img.step {
+    position: absolute;
+    top: 30%;
+    left: 92%;
+}

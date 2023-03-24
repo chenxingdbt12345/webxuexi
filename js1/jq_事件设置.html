@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery.slim.min.js"></script>
+	</head>
+	<body>
+		<button id="bt1">ok</button>
+	</body>
+	<script>
+	// $("#bt1").click(function(){
+	// 	alert(1)
+	// })
+	// hover可以设置两个函数，
+	// 第一个函数表示鼠标悬停在元素上的行为
+	// 第一个函数表示鼠标离开元素时的行为
+	// $("#bt1").hover(function(){
+	// 	$("#bt1").css("backgroundColor","red")
+	// },function(){
+	// 	$("#bt1").css("backgroundColor","")
+	// })
+	
+	// function sayHi(){
+	// 	$("#bt1").css("backgroundColor","red")
+	// }
+	
+	// bind绑定多个事件（多种行为执行同一操作）
+	// $("#bt1").bind("click mouseover",sayHi)
+	//unbind可以移除bind绑定的事件
+	// 参数指定：第一个参数为需要移除的事件
+	// 第二个参数表示需要移除的具体行为，若该参数不写，则移除对应事件下的所有操作
+	// $("#bt1").unbind("mouseover")
+	
+	// 事件传参
+	// $("#bt1").on("click",{"name":"tom","age":21},sayHi)
+	function sayHi(eve){
+		console.log("name:"+eve.data.name+"  age:"+eve.data.age)
+	}
+	// $("#bt1").off("click",sayHi)
+	// 只执行一次
+	$("#bt1").one("click",{"name":"tom","age":21},sayHi)
+	</script>
+</html>

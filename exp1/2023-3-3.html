@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 在所有的选择器中，id选择器的优先级最高 
+							其次为类选择器与属性选择器，二者谁在下面，相同的样式会覆盖上面指定的样式
+							标记选择器的优先级最低
+						*/
+		
+			/* 标记选择器 */
+			button{
+				background-color: aqua;
+			}
+			/* id选择器 */
+			#div1{
+				width: 800px;
+				height: 600px;
+				background-color: yellow;
+			}
+			/* 属性选择器 */
+			[type="text"]
+			{
+				background-color: azure;
+			}
+			[xiaoming="tom"]{
+							background-color: lightseagreen;
+						}
+			/* 类选择器 */
+			.bt1{
+				background-color: black;
+			}
+		</style>
+		<link rel="stylesheet" href="css/txcss01.css">
+	</head>
+	<body>
+		<button>ok</button>
+		<button class="bt1">ok1</button>
+		<div id="div1"></div>
+		<div id="dv1" class="dv" xiaoming="tom">dv1</div>
+		用户名：<input type="text" />
+	</body>
+</html>

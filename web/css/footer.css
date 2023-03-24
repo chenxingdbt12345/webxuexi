@@ -1,0 +1,41 @@
+/*页脚区域设置
+1、设置背景色
+2、设置内边距
+3、清除浮动 
+ */
+ .footer {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    clear: both;
+}
+/* 设置版权内容
+1、设置内容过多时溢出隐藏
+2、设置文字在区域内居中
+3、设置span标签为内联式盒子，方便控制排版与大小
+4、设置字体大小与颜色
+ */
+.container .line_one {
+    overflow: hidden;
+    text-align: center;
+}
+.container .line_one>span {
+    display: inline-block;
+    margin: 0 0.3rem;
+    font-size: 0.6rem;
+    color: #000;
+}
+/* 联系信息部分设置
+1、设置内容过多时溢出隐藏
+2、设置文字在区域内居中
+3、设置宽度与右外边距，用于控制盒子间的距离
+*/
+.container .line_two {
+    overflow: hidden;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+.container .line_two>span{
+    font-size: 0.7rem;
+    width: 100%;
+    margin-right: 10px;
+}

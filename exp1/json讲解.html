@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<script>
+	// 声明了json格式的对象，
+	// json以键值对的方式进行存储数据，
+	// 是常用于组织pojo的一种对象
+	var student={"name":"tom","age":21,"birthday":new Date()};
+	// json取值 第一种以json对象名.key值进行取值
+	console.log(student.name)
+	// json取值 第一种以json对象名[key]值进行取值
+	console.log(student["age"])
+	// json数据的更新与新增操作
+	// 若原key值存在，则修改原key所对应的value
+	student["age"]=25
+	console.log(student["age"])
+	// 若原key值不存在，则新增一个key-value到json对象中
+	student["hoby"]="唱歌";
+	console.log(student["hoby"])
+	// 使用foreach进行遍历json
+	for(var i in student){
+		console.log(student[i])
+	}
+	var student2={
+		"sid":101,
+		"sname":"tom",
+		"getId":function(){
+			return 2;
+		},
+		"hoby":{
+			"class":"java",
+			"score":99
+		}				
+	}
+	// 
+	console.log("============================")
+	console.log(student2["hoby"]["score"])
+	console.log(student2.getId)
+	
+	
+	
+	
+	</script>
+	</body>
+</html>
+暂无评论

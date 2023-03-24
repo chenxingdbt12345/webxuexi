@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script language="javascript">
+
+function showTime(){
+
+    var time=new Date();
+
+    document.forms[0].myClock.value=time.getHours()+":"
+
+        +time.getMinutes()+":"+time.getSeconds();
+
+    var myTime=setTimeout("showTime()",1);
+
+}
+
+</script>
+
+</head>
+
+<body onLoad="showTime()">
+
+<form name="form1" action="" method="">
+
+<input name="myClock" type="text" value="" readonly="true"/>
+
+</form>
+
+</body>
+
+</html>

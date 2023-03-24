@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>倒计时</title>
+		<style>
+			#totaldiv {
+				width: 960px;
+				height: 600px;
+				margin: 0 auto;
+			}
+
+			#divhead {
+				width: 100%;
+				height: 60px;
+				/* border: 1px dashed gray; */
+			}
+
+			#divbody {
+				width: 100%;
+				height: 360px;
+				/* border: 1px dashed gray; */
+			}
+
+			#text1 {
+				float: left;
+				background-color: orange;
+			}
+			#daojishi{
+				font-size: 20px;
+				font-weight: bold;
+				margin-top: 10px;
+				float: left;
+			}
+			a:link{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="totaldiv">
+			<div id="divhead">
+				<div style="float: left;">
+					<ul>
+						<li style="list-style: none;"><a href="#">今日团购&nbsp;>&nbsp;</a>
+							<a href="#">商品团&nbsp;>&nbsp;</a>
+							<a href="#">食品保健&nbsp;>&nbsp;</a>
+						</li>
+					</ul>
+				</div>
+				<div style="float: right;margin-right: 1%;">
+					<ul>
+						<li style="list-style: none;"><a href="#">查看更多同类商品</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="divbody">
+				<div style="width: 40%; height: 400px;float: left;">
+					<img src="imgs/1.jpg" />
+				</div>
+				<div style="width: 58%; height: 400px;float: right;">
+					<div>
+						<h4 style="margin-top: 0;">百草味&nbsp;酸甜芒果干120×3袋（每个袋限量20）</h4>
+					</div>
+					<div>
+						<div id="text1">
+							包邮
+						</div>
+						<div style="float: left;">&nbsp;</div>
+						<div style="float: left;">&nbsp;</div>
+						<div id="text1">
+							退货免运费
+						</div>
+						<div style="float: left;">&nbsp;</div>
+						<div style="float: left;">&nbsp;</div>
+						<div style="float: left;">&nbsp;</div>
+						<div id="text1">
+							前35000件24。9元
+						</div>
+					</div>
+					<div style="float: left;width: 100%;height: 100px;">
+						<div>
+							<ul>
+								<li>限量减3元&nbsp;400余款零食超值让利，抢爆款2件9.9元</li>
+								<li>抢下立减&nbsp;同品质价更低，实在让利</li>
+								<li>限首件优惠&nbsp;火速发货，快才痛快</li>
+							</ul>
+						</div>
+					</div>
+					<div style="width: 100%;height: 40px;float: left;">
+						<div id="daojishi">
+							<p style="float: left;"><span id="show"></span></p>
+						</div>
+						<div style="float: right;">
+							<div style="float: right;margin-top: 5%;">已付款</div>
+							<div style="float: right;margin-top: 5%;color: red;">24275</div>
+							<div style="float: right;"><img src="imgs/2.jpg" /></div>
+						</div>
+					</div>
+					<div style="width: 100%; height: 60px; background-color: red; float: left; ">
+						<div style="font-size: 36px; margin-top: 2%; margin-left: 2%; color: white;float: left;">
+							￥27.90
+						</div>
+						<div style="float: left; margin-top: 6%;">
+							&nbsp;&nbsp;&nbsp;<s>￥66.80</s>
+						</div>
+						<div
+							style="width: 200px;float: right;background-color: yellow; text-align: center;height: 40px; margin-top: 2%;margin-right: 2%;border-radius: 10px;">
+							<p style="margin-top: 4%;">马上抢</p>
+						</div>
+					</div>
+					<div style="float: left; width: 100%;">
+						<div style="margin-top: 5%;width: 50%;">
+							<div style="float: left;"><img src="imgs/3.jpg" /></div>
+							<div style="float: left;">加入购物车</div>
+							<div style="float: left;"><img src="imgs/4.png" /></div>
+							<div style="float: left;">加入收藏夹</div>
+							<div style="float: left;"><img src="imgs/5.png" /></div>
+							<div style="float: left;">分享</div>
+						</div>
+						<div style="float: right; width: 50%;;">
+							<div style="float: left; margin-left: 10%;">
+								<img src="imgs/6.png" />
+							</div>
+							<div style="float: left; margin-right: 0%;">
+								<ul style="margin-top: 1%; list-style: none;">
+								<li style="color: red;">手机扫码下载手机客户端</li>
+								<li>享受手机专属优惠</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		window.onload=function(){
+			setInterval("time()",1000)
+		}
+		function time(){
+			var begintime=new Date();
+			var endtime=new Date("2023/03/31,0:0:0");
+			var patime=parseInt((endtime.getTime()-begintime.getTime())/1000)
+			var day=parseInt(patime/(24*60*60))
+			var hour=parseInt(patime/(60*60)%24)
+			var minute=parseInt(patime/60%60)
+			var second=parseInt(patime%60)
+			document.getElementById('daojishi').innerHTML='还剩：'+day+'天 '+hour+'时'+minute+'分'+second+'秒'
+			if(patime<=0){
+				document.getElementById('daojishi').innerHTML="抢购已经结束"
+			}
+		}
+		</script>
+</html>

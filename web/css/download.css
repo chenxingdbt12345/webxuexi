@@ -1,0 +1,129 @@
+/* 设置网页主体区域
+1、宽度设置
+2、上内边距，主要控制与头部区域的距离留白
+*/
+.full-screen {
+    width: 100%;
+    padding-top: 140px;
+}
+
+.container.re-con {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* 下载信息整体区域设置
+1、设置外边距
+*/
+.container .row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 1rem;
+}
+/* 手机图片与二维码下载两个区域盒子的通用设置
+1、最小高度设置
+2、左右内边距设置，主要控制盒子间的距离
+3、盒子间向左排列
+4、设置区域盒子宽高继承取决与边框盒子
+ */
+.container .col{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: border-box;
+
+}
+/* 设置手机图片盒子大小占整体的42%及图片的设置 */
+.container .col.left{
+    width: 42%;
+}
+.container .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 设置二维码下载区域盒子 
+1、宽度占整体的58%
+2、内容溢出隐藏
+3、上内边距设置
+*/
+.container .col.right{
+    width: 58%;  
+    overflow: hidden;
+    padding-top: 2rem;
+}
+/* 二维码图片与下载按钮区域设置
+1、内容区域内溢出隐藏
+2、图片区域设置40%大小，并设置浮动与按钮并列
+*/
+.container .right_text_top {
+    overflow: hidden;
+}
+.container .left_img {
+    width: 40%;
+    float: left;
+}
+/* 设置具体图片在图片区域内100%显示 */
+.container .left_img>img{
+    max-width: 100%;
+    height: auto;
+}
+/* 按钮设置
+1、按钮右浮动
+2、a标签设置为行标签，用于控制盒子大小
+3、区域背景色
+4、盒子四边圆角显示
+5、设置字体大小与颜色以及行高
+6、设置盒子的内外边距
+7、设置a标签为绝对定位，用于控制按钮上系统图标的位置存放
+*/
+.container .right_button {
+    width: 55%;
+    float: right;
+}
+.right_button>a {
+    display: block;
+    width: 54%;
+    height: 3.6rem;
+    position: relative;
+    background-color: #1db7f0;
+    border-radius: 30rem;
+    margin-top: 0.7rem;
+    font-size: 0.6rem;
+    color: #fff;
+    padding-left: 30%;
+    line-height:3.6rem;
+}
+/* 分别设置苹果下载与安装下载的图标显示
+1、设置span标签为内联式行标签，并设置盒子大小
+2、利用背景图定位在盒子内显示对应的图标
+3、设置背景图片显示大小
+4、设置相对定位，控制span标签对于a标签的位置
+*/
+.right_button .bg_pad {
+    display: inline-block;
+    width:3.6rem;
+    height: 3.6rem;
+    background: url(../images/apple.png) 0 center no-repeat;
+    background-size: 65% 65%;
+    position: absolute;
+    left: 20%;
+}
+.right_button .bg_android {
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    background: url(../images/android.png) 0 center no-repeat;
+    background-size: 65% 65%;
+    position: absolute;
+    left: 20%;
+}
+/* 下载信息段落设置
+1、字体颜色设置
+2、上外边距设置，用于控制与上方区域的留白距离
+*/
+.container .col.right>p {
+    font-size: 0.6rem;
+    color: #767676;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+	// 判断结构
+	var num_01=2;
+	var num_02=6;
+	// 判断括号中的内容是否存在成立，包括逻辑判断、是否为非空、非零等
+	if(num_01>num_02){
+		console.log("num_01比较大")
+	}else if(num_01<num_02){
+		console.log("num_02比较大")
+	}else{
+		console.log("num_01和num_02一样大")
+	}
+	
+	var c=null;
+	// 本质上等于if c!=null
+	if(c){
+		console.log(1)
+	}else{
+		// 该语句执行结果为else中的内容
+		console.log(2)
+	}
+	if(0){
+		// 本质上等价于是否为非0，故该条语句无输出
+	console.log("成立")
+		}
+		// 判断语句也可以判断变量是否存在等
+	if(num_01){
+		console.log("存在")
+	}else{
+		console.log("不存在")
+	}
+	console.log("=====================")
+		switch(num_01){
+			case 1:
+	switch(num_01){
+		case 1:
+			console.log(1)
+			case 2:
+		case 2:
+			console.log(2)
+			break
+			case 5:
+		case 5:
+			console.log(5)
+			
+		}
+		
+	}
+	// 循环结构
+	console.log("for循环===================")
+	// continue是结束本次循环，跳出，执行下一次循环操作
+	// break是结束整体循环
+	for(var i=0;i<10;i++){
+		if(i==3){
+			continue;
+		}
+		console.log(i)
+	}
+	console.log("while循环===================")
+	var num_03=5;
+	while(num_03>1){
+		console.log(num_03);
+		num_03--;
+	}
+	console.log("do while循环===================")	
+	var num_06=5;
+	do{
+		console.log(num_06);
+		num_06--;
+	}while(num_06>1)	
+		
+	
+	</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#dv1{
+			width: 600px;
+			height: 600px;
+			background-color: pink;
+			position: absolute;/* 精确定位 */
+			left:50px;/* 距离左上角 */
+			top:50px;
+		}
+		#dv2{
+			width: 500px;
+			height: 500px;
+			background-color: yellowgreen;
+			/* margin: 100px; */
+		}
+		#dv3{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			left: 50px;
+			top:50px;
+			z-index: 3;
+		}
+		#dv4{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			position: absolute;
+			left: 100px;
+			top:100px;
+			z-index: 9;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="dv1">
+			<div id="dv2">
+				<div id="dv3">aaa</div>
+				<div id="dv4">bbb</div>
+			</div>			
+		</div>		
+	</body>
+</html>

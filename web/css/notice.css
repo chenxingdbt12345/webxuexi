@@ -1,0 +1,126 @@
+/* 网页主体区域设置
+1、宽度设置
+2、上内边距设置，主要用于控制与头部区域的留白距离
+ */
+
+ .full-screen {
+    width: 100%;
+    padding-top: 173px;
+}
+
+
+/* 公告大标题设置
+1、字体大小与颜色设置
+2、内容在区域中居中
+*/
+
+.notice_title {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+}
+
+
+/* 公告具体信息部分设置
+1、内边距设置
+2、内容在区域内溢出隐藏
+*/
+
+.article {
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+
+
+/* 公告信息小标题的字体大小颜色设置 */
+
+.article>h2>a {
+    font-size: 18px;
+    color: #000;
+}
+
+
+/*  公告信息小标题鼠标移上变化颜色 */
+
+.article>h2>a:hover {
+    color: #1db7f0;
+}
+
+
+/* 公告信息具体内容设置
+1、设置内容在区域内溢出隐藏
+2、设置文本溢出时用省略号代替
+3、设置字体大小与颜色
+4、设置段落区域上下外边距，用于控制区域间的距离
+5、设置允许在单词内换行
+*/
+
+.article>p {
+    overflow: hidden;
+    width: 100%;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* 公告信息时间部分设置
+1、设置标签向右浮动
+2、设置字体大小与颜色
+*/
+
+.article>span {
+    float: right;
+    font-size: 0.35rem;
+    color: #000;
+}
+
+
+/*分页结构部分设置
+1、设置文本在区域内居中 
+2、设置宽度100%
+3、设置上下外边距，用于控制区域间的距离
+ */
+
+.dede_pages {
+    text-align: center;
+    margin-top: 0.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+/* 分页列表设置
+1、设置文本在区域内居中 
+2、设置溢出隐藏
+3、列表向左排列
+4、设置行高与内边距
+5、设置右外边距，用于列表间的距离控制
+6、设置边框
+7、设置字体颜色以及鼠标移上后的变色
+*/
+
+.dede_pages>ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+.dede_pages>ul>li {
+    float: left;
+    line-height: 28px;
+    margin-right: 6px;
+    padding: 0px 8px;
+    border: 1px solid #E9E9E9;
+}
+
+.dede_pages>ul>li>a {
+    color: #333;
+}
+
+.dede_pages>ul>li>a:hover {
+    color: #1db7f0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- <button onclick="sayHello()">ok</button>
+		<button onclick="window.alert('你好')">ok2</button> -->
+		<button id="bt1" title="red">ok1</button>
+		<button class="bt_cls bt_class" title="yellow">ok1</button>
+		<button class="bt_cls" title="blue">ok1</button>
+		<button class="bt_cls" title="pink">ok1</button>
+		<button name="bts" title="yellowgreen">ok1</button>
+		<button name="bts" title="orange">ok1</button>	
+		<input type="text" onkeydown="writeMsg()"/>
+	</body>
+	<script>
+	// js中this的用法
+	// 全局作用域或者普通函数中的this指向全局对象window
+	// 在对象中，this指向的是对象本身
+	// 在事件中，谁触发时间，则this指向谁	
+	function sayHello(){
+		alert("你好")
+	}
+	// 定位所有按钮
+	var bts=document.getElementsByTagName("button");
+	for(let i=0;i<bts.length;i++){
+		// 为每一个标签绑定一个单击事件
+		bts[i].onclick=function(){
+			this.style.backgroundColor=this.title;
+		}
+	}
+	
+	function writeMsg(){
+		console.log(111)
+	}
+	
+	
+	</script>
+</html>

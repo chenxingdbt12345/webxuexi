@@ -1,0 +1,24 @@
+/*清除默认的样式*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+/* 图片默认不要边框 */
+img{
+    border: 0;
+    vertical-align: middle;
+}
+/* 超链接标签不要有下划线 */
+a{
+    text-decoration:none ;
+}
+
+a:focus,
+a:hover{
+    text-decoration: none !important;
+}
+/* 列表标签不要默认的图标 */
+ul{
+    list-style: none;
+}

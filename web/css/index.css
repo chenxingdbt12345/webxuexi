@@ -1,0 +1,102 @@
+/* 主体banner图片区域设置
+1、设置区域上内边距，控制与头部的距离
+*/
+.banner {
+    padding-top: 140px;
+}
+/* banner图片的设置
+1、设置图片标签为行标签，方便控制区域宽高
+2、设置左右外边距
+3、设置最大宽度
+*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+}
+/* app下载内容区域设置
+1、左右及上外边距控制，主要为控制该区域与banner大图以及浏览器边框的距离
+*/
+.container .row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 1rem;
+}
+/*手机图片与二维码图片区域的设置
+1、设置两个图片向左排列
+2、设置区域左右内边距
+3、设置最小高度
+4、设置区域盒子宽高继承取决与边框盒子，主要为控制两个图片区域的内容宽度分配
+ */
+.row .col{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: border-box;
+
+}
+/* 设置手机图片区域占总区域的42%宽度 */
+.col.left{
+    width: 42%;
+}
+/* 设置二维码图片区域占总区域的58%宽度 */
+.col.right{
+    width: 58%;  
+}
+/*设置手机图片的存放区域  */
+.col .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 下载信息部分的标题文字部分设置
+1、字体大小与颜色设置
+2、上下外边距控制
+3、字体粗细设置
+4、杭高设置
+*/
+
+.row h1{
+    color: #1db7f0;
+    font-size: 0.6rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+/* 下载信息部分的段落文字部分设置
+1、字体大小与颜色设置
+2、外边距控制，主要控制其与标题的距离
+*/
+.row p{
+    font-size: 0.5rem;
+    color: #000;
+    margin: 0 0 10px;
+}
+/* 合作伙伴信息区域设置
+1、父元素清除浮动，否则会由于之前的浮动操作导致后续图片排放不正常
+*/
+.container  .partner{
+    clear: both;
+}
+/* 合作伙伴标题设置
+1、字体颜色设置
+2、文字在区域内居中
+*/
+.partner>h1 {
+    font-size: 0.7rem;
+    color: #000;
+    text-align: center;
+}
+/* 合作伙伴信息区域设置
+1、设置外边距，主要为控制信息区域之间的距离
+2、宽度设置
+*/
+.partner>.row>div {
+    margin: 0.4rem 0;
+    width: 16%;
+}

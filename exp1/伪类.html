@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		/* 注意在使用中不要修改顺序，否则会导致部分样式失效 */
+		/* 在这5中选择器当中，link和visited两个是互斥的并且可以覆盖所有的场景（这里只考虑有href属性的情况），因此是不能把这两个都放在最后的，如果这两个放在最后，那么其他的伪类将都不生效。但是，当link和visited这两个放在前两位的时候，他们之间的位置是可以互换的。hover和active两个必须hover在前active在后，因为hover时鼠标悬停包含了鼠标点击，如果hover在后则active不生效。按照“link-visited-focus-hover-active”的顺序来书写链接伪类的顺序正是出于这种考虑。 */
+			/* 没有被访问过 */
+			a:link{
+				color: black;
+			}
+			/* 访问过以后 */
+			a:visited{
+				color: red;
+			}
+			/* 鼠标悬停后的状态 */
+			a:hover{
+				color: yellow;
+			}
+			/* 当点击时候的状态 */
+			a:active{
+				color: pink;
+			}
+			
+		 /* 单行添加样式 */
+			table tr:nth-child(odd){
+				background-color: pink;
+			}
+			/* 双行添加样式 */
+			table tr:nth-child(even){
+				background-color: steelblue;
+			}
+			/* 将特殊样式添加到元素的第一行 */
+			table tr:first-child{
+				background-color: #FFFF00;
+			}
+			/* 将特殊样式添加到元素的最后行 */
+			table tr:last-child{
+				background-color: green;
+			}
+			button:focus{
+				background-color: red;
+			}
+			
+			/* 添加前缀 */
+			a:before{
+				content: url('img/yyyy.jpg');
+				
+			}
+			/* 添加后缀 */
+			a:after{
+				content: 'abc';
+				
+			}
+	
+		</style>
+	</head>
+	<body>
+		<button>ok1</button>
+		<button>ok1</button>
+		<button>ok1</button>
+		<button>ok1</button>
+		<button>ok1</button>
+		
+		<a href="http://www.jd.com">点击超链接</a>
+		<table border="1" width="600px" height="400px">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+		</table>
+		
+		
+	</body>
+</html>

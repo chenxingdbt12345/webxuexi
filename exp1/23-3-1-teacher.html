@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="https://www.baidu.com" method="get">
+			用户名：<input type="text" name="username" disabled="disabled" placeholder="请输入用户名" value="admin" />
+			<br />
+			密码：<input type="password" name="userpwd" required="required" placeholder="请输入密码"/>
+			<br />
+			性别：<input type="radio" name="sex" value="1" checked="checked"/>男 &nbsp; <input type="radio" name="sex" value="2"/>女 
+			<br />
+			兴趣：<input type="checkbox" name="hoby" value="1" checked="checked"/>琴
+			<input type="checkbox" name="hoby" value="2"/>棋
+			<input type="checkbox" name="hoby" value="3"/>书
+			<input type="checkbox" name="hoby" value="4"/>画
+			<br />
+			星座：
+			<select name="star">
+			<select name="star" multiple="multiple">
+				<option selected="selected" disabled="disabled">请选择</option>
+				<optgroup label="风向星座">
+					<option value="1">天秤座</option>
+					<option value="2">水瓶座</option>
+					<option value="3">双子座</option>
+				</optgroup>
+				<optgroup label="火向星座">
+					<option value="4">白羊座</option>
+					<option value="5">狮子座</option>
+					<option value="6">双鱼座</option>
+				</optgroup>
+				<optgroup label="水向星座">
+					<option value="7">巨蟹座</option>
+					<option value="8">射手座</option>
+					<option value="9">摩羯座</option>
+				</optgroup>
+				<optgroup label="土向星座">
+					<option value="10">仙女座</option>
+					<option value="11">金牛座</option>
+					<option value="12">天蝎座</option>	
+				</optgroup>
+			</select>
+			<br />
+			<input type="submit" value="注册" />
+			
+			
+			个人介绍：
+			<textarea rows="20" cols="50"></textarea>
+			<br />
+			入职日期：
+			<input type="date">：日期
+			<input type="datetime">：日期时间（兼容性不是很好）
+			<input type="datetime-local" />日期时间
+			<input type="time" />时间
+			<br />
+			可输入可选框：
+			<input type="text" list="list_data" />
+			<datalist id="list_data">
+				<option>aaaa</option>
+				<option>aabb</option>
+				<option>aaaabbbb</option>
+				<option>bbbb</option>
+			</datalist>
+			<br />
+			带边框的表单组件
+			<fieldset>
+				<legend align="right">个人资料</legend>
+				用户名：<input type="text" />
+			</fieldset>
+			<br />
+			年龄：
+			<input type="number" min="20" max="65" step="2" />
+			<br />
+			上传资料：<input type="file" />
+			<br />
+			<input type="hidden" name="money" value="1000000000" />
+			<!-- <input type="submit" value="注册" /> -->
+			<button type="submit">
+				<img height="50px" width="100px" src="img/u=31249274,3006398027&fm=200&gp=0.jpg"/>
+			</button>			
+		</form>
+	</body>
+</html>

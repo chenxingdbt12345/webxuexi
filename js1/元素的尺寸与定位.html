@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		#dv1{
+			width: 400px;
+			height: 400px;
+			background-color: pink;
+			/* padding: 10px; */
+			/* border: 1px solid red; */
+			position: absolute;
+			left:50px;
+			top:50px;
+			/* margin-left: 900px; */
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div id="dv1">			
+		</div>	
+	</body>
+	<script>
+	// var dv1=document.getElementById("dv1");
+	// console.log("clientWidth:::"+dv1.clientWidth)
+	// console.log("clientHeight:::"+dv1.clientHeight)
+	// console.log("offsetHeight:::"+dv1.offsetHeight)
+	// console.log("offsetWidth:::"+dv1.offsetWidth)
+	// console.log("offsetLeft:::"+dv1.offsetLeft)
+	// console.log("offsetTop:::"+dv1.offsetTop)
+	// 点击事件
+	// dv1.onclick=function(e){
+	// 	console.log("pageX:::"+e.pageX)
+	// 	console.log("pageY::::"+e.pageY)
+	// 	console.log("clientX:::"+e.clientX)
+	// 	console.log("clientY::::"+e.clientY)
+	// 	console.log("offsetX:::"+e.offsetX)
+	// 	console.log("offsetY::::"+e.offsetY)
+	// }
+	// 监控鼠标移动的事件触发
+	// document.onmousemove=function(e){
+	// 	console.log("clientX:::"+e.clientX)
+	// 	console.log("clientY::::"+e.clientY)
+	// }
+	
+	// 拖拽小案例
+	var dv1=document.getElementById("dv1");	
+		// 鼠标按下时触发
+		dv1.onmousedown=function(e){
+			document.onmousemove=function(evt){
+				// 鼠标样式改变为小手
+				dv1.style.cursor="pointer";
+				// 设置元素的左边距为 事件触发是鼠标距离页面左侧的距离-鼠标距离事件源的距离
+				dv1.style.left=evt.pageX-e.offsetX+"px";
+				dv1.style.top=evt.pageY-e.offsetY+"px";	
+			}		
+		}
+		// 鼠标抬起时触发行为
+		dv1.onmouseup=function(ev2){
+			// 将鼠标移动事件清空
+			document.onmousemove=null;
+			// 将鼠标的样式改为默认样式
+		// dv1.onmousedown=function(e){
+		// 	document.onmousemove=function(evt){
+		// 		// 鼠标样式改变为小手
+		// 		dv1.style.cursor="pointer";
+		// 		// 设置元素的左边距为 事件触发是鼠标距离页面左侧的距离-鼠标距离事件源的距离
+		// 		dv1.style.left=evt.pageX-e.offsetX+"px";
+		// 		dv1.style.top=evt.pageY-e.offsetY+"px";	
+		// 	}		
+		// }
+			
+
+		function mousemove(e,evt){
+			console.log(arguments)
+			console.log(e)
+			console.log(evt)
+			dv1.style.cursor="pointer";
+			// 设置元素的左边距为 事件触发是鼠标距离页面左侧的距离-鼠标距离事件源的距离
+			dv1.style.left=evt.pageX-e.offsetX+"px";
+			dv1.style.top=evt.pageY-e.offsetY+"px";
+		}						
+		dv1.addEventListener("mousedown",function(e){
+			console.log(e)
+			document.addEventListener("mousemove",mousemove(e))	
+		console.log(document.event)
+		})
+		dv1.addEventListener("mouseup",function(){			
+			// console.log(document.eventListener())
+			// document.removeEventListener("mousemove",m);
+			dv1.style.cursor="default";
+		})
+		// 鼠标抬起时触发行为
+		// dv1.onmouseup=function(ev2){
+		// 	// 将鼠标移动事件清空
+		// 	document.onmousemove=null;
+		// 	// 将鼠标的样式改为默认样式
+		// 	dv1.style.cursor="default";
+			
+			
+		}
+		// }
+	
+	</script>
+</html>

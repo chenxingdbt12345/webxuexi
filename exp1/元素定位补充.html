@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="bt1">ok1</button>
+		<button class="bt_cls">ok1</button>
+		<button class="bt_cls bt_class">ok1</button>
+		<button class="bt_cls">ok1</button>
+		<button class="bt_cls">ok1</button>
+		<button name="bts">ok1</button>
+		<button name="bts">ok1</button>				
+		<button name="bts">ok1</button>	
+		<div id="dv1">
+			<button class="bt_cls">ok1</button>
+			<button class="bt_cls">ok1</button>
+			<button class="bt_cls">ok1</button>
+		</div>										
+	</body>
+	<script>
+		// 1、通过id属性去定位元素，只能定位到1个（id属性唯一）
+@@ -28,10 +33,16 @@
+			bts_name[i].style.color="yellow"
+		}
+		// 4、通过元素的class属性值对元素进行定位，返回一个数组
+		var bts_cls=document.getElementsByClassName("bt_cls");
+		var bts_cls=document.getElementsByClassName("bt_cls bt_class");
+		for(let i=0;i<bts_cls.length;i++){
+			bts_cls[i].style.color="pink"
+		}
+		// 在定位元素时，可以全局查找，也可以指定区域内进行定位元素
+		// 此处为定位div下的class属性名为bt_cls的所有标记
+		var bt_dv=document.getElementById("dv1").getElementsByClassName("bt_cls");
+		for(let i=0;i<bt_dv.length;i++){
+			bt_dv[i].style.width="200px"
+		}
+	
+	</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="bt1">ok1</button>
+		<button id="bt2">ok2</button>
+	</body>
+	<script>
+	// dom0级事件的添加，采用直接赋值的方式即可
+	var bt1=document.getElementById("bt1");
+	bt1.onmousedown=function(){
+		// alert("bt1")
+		console.log(arguments[0])
+	}
+	// dom0级事件添加时，会覆盖
+	// bt1.onclick=function(){
+	// 	bt1.style.backgroundColor="red";
+	// }
+	// dom2级的事件添加，采用事件监听器的方式进行添加
+	var bt2=document.getElementById("bt2");
+	bt2.addEventListener("click",sayHello)
+	function sayHello(){
+		alert("bt2")
+	}	
+	// dom2级事件添加，是累加的效果，官方解释：为一个元素添加多个事件监听器
+	bt2.addEventListener("click",sayBye)
+	function sayBye(){
+		bt2.style.backgroundColor="red";
+	}
+	
+	// dom2级事件可以针对性移除某个事件行为
+	bt2.removeEventListener("click",sayHello);
+	
+	</script>
+</html>

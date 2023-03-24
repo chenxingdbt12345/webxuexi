@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择器的层叠使用</title>
+		<style>
+		/* 选择器的层叠用法
+		 选择器  选择器{}：此种用法，可以选择元素内的所有直接或间接子元素
+		 选择器>选择器{}:该种用法，会选择选择内的直接子标记，而间接子标记不会被选中		 
+		 */
+		#dv1>div{
+			width: 100px;
+			height: 100px;
+			background-color: #4682B4;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="dv1">
+			<div>
+				dv1
+				<div>dv1_1</div>
+			</div>
+			<div>
+				dv2
+			</div>
+			<div>
+				dv3
+			</div>
+			<button> 
+				bt1
+				<div>bt1_dv1</div>
+			</button>						
+		</div>
+		
+		
+		
+	</body>
+</html>

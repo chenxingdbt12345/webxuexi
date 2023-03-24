@@ -1,0 +1,112 @@
+/* 导航部分整体样式设置
+1、背景设置，首选背景图片，若图片没有则使用背景色填充
+2、标签盒子不需要边框与圆角
+3、宽度100%
+*/
+.navbar{
+    background-image:url(../images/header_bg.png) !important;
+    background-position:0 0;
+    background-repeat: no-repeat;
+    border: none;
+    background: #2E2624;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+/* 联系方式部分设置
+1、区域宽度设置
+2、左右内外边距控制
+3、区域盒子具体宽高继承设置取决与边框盒子
+ */
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+/* 存放具体信息的盒子设置
+1、文字在区域内靠右排版
+2、高度设置
+3、行高设置
+4、区域盒子具体宽高继承设置取决与边框盒子
+ */
+.relation{
+    text-align: right;
+    height: 39px;
+    line-height: 39px;
+    box-sizing: border-box;
+}
+/* 两个span标签的控制
+1、变为行内联标签，即可并排显示同时可设置宽高
+2、字体大小和颜色设置
+ */
+.relation>.lianxi{
+    display:inline-block ;
+    font-size: 14px;
+    color: #fff;
+}
+/* 电话与qq号码前的两个图标设置
+1、分别利用背景图并控制其内边距与外边局，控制其存放的位置
+ */
+.relation>.telephone{
+    background: url("../images/heabder_teplhone.png") 0 center no-repeat;
+    padding-left: 20px;
+}
+.relation>.qq{
+    background: url("../images/header_qq.png")0 center no-repeat;
+    margin-left: 20px;
+    padding-left: 23px;
+}
+
+/* logo和导航整体区域设置
+1、上下边框设置，实现上下两条线
+2、区域高度
+3、区域内边距
+ */
+.nav-line{
+    border-top: 1px solid #1db7f0;
+    border-bottom: 1px solid #1db7f0;
+    height: 100px;
+    padding: 0 15px;
+}
+/*logo部分设置
+1、区域内边距设置
+2、 区域盒子具体宽高继承设置取决与边框盒子
+3、logo区域向左浮动
+ */
+.navbar-header {
+    padding: 20px 15px;
+    box-sizing: border-box;
+    float: left;
+}
+/* 导航部分设置
+1、区域右浮动
+2、内边距设置
+3、导航内容向左排列并设置内边距
+4、超链接文字字体设置
+*/
+.collapse{
+    float: right;
+    padding: 40px 15px;
+}
+.nav>li{
+    float: left;
+    padding-left: 28px;
+}
+.nav>li>a{
+    color: #fff !important;
+    font-size: 18px !important;
+    text-shadow: none !important;
+}
+/* 设置超链接鼠标移上效果
+1、文字颜色变黑色
+2、拥有黑色下划线
+*/
+.nav>li>a:hover{
+    color: #000 !important;
+    border-bottom: 1px solid #000;
+}

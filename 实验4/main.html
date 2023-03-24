@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="add.js"></script>
+	</head>
+	<body>
+		<div style="width: 1000px; height: 900px; margin: 0 auto;">
+			<div style="width: 30%; float: left;">
+				<table width="200px" height="800px">
+					<tr>
+						<td height="200px"><img src="imgs/1.png" width="200px" height="200px" /></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: orange; font-size: 18px;">账号管理</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">安全设置</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">个人资料</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">个人成长信息</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">支付宝绑定设置</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">微博绑定设置</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">个人交易信息</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">收货地址</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">网址提醒</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">旺旺网页设置</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">应用授权</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" style="text-decoration: none; color: black;">分享绑定</a></td>
+					</tr>
+				</table>
+			</div>
+			<div style="width: 70%; float: right;">
+				<table style="width: 800px; height: 800px;">
+					<tr>
+						<td colspan="2"  height="90px"><div style="color: royalblue; font-size: 36px; background-color: aqua;"><b>收货地址</b></div></td>
+					</tr>
+					<tr>
+						<td style="color: orange;"><b>新增收获地址</b></td>
+						<td>电话号码、手机号选填一项，其余为必选项</td>
+					</tr>
+					<tr>
+						<td>所在地区</td>
+						<td>
+							<select id="province" style="height: 30px;">
+								<option>请选择省份</option>
+							</select>
+							<select id="city" style="height: 30px;">
+								<option>请选择城市</option>
+							</select>
+							<select id="area" style="height: 30px;">
+								<option>请选择地区</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="float: left;">详细地址</td>
+						<td><textarea cols="40px" rows="20px" name="textarea" placeholder="请如实填写详细地址"></textarea></td>
+					</tr>
+					<tr>
+						<td>邮政编码</td>
+						<td><input type="text" name="numyz" placeholder="如果您不清楚您的邮政编码填写000000" style="width: 280px; height: 25px;" />
+						</td>
+					</tr>
+					<tr>
+						<td>收件人姓名</td>
+						<td><input type="text" name="rename" placeholder="长度不超过25个字符" style="width: 280px; height: 25px;" /></td>
+					</tr>
+					<tr>
+						<td>手机号码</td>
+						<td>
+							<select style="font-weight: bolder; height: 25px">
+								<option selected="selected">中国大陆+86</option>
+								<optgroup label="中国大陆+86">
+									<option>1</option>
+									<option>2</option>
+								</optgroup>
+
+								<optgroup label="中国香港">
+									<option>1</option>
+									<option>2</option>
+								</optgroup>
+							</select>
+							<input type="text" name="phonenum1" placeholder="电话号码手机号码必须填一项" style="font-weight: bolder; height: 25px"/>
+						</td>
+					</tr>
+					<tr>
+						<td>电话号码</td>
+						<td>
+							<select style="font-weight: bolder; height: 25px">
+								<option selected="selected">中国大陆+86</option>
+								<optgroup label="中国大陆+86">
+									<option>1</option>
+									<option>2</option>
+								</optgroup>
+								<optgroup label="中国香港">
+									<option>1</option>
+									<option>2</option>
+								</optgroup>
+							</select>
+							<input type="text" name="quhao" placeholder="区号" style="font-weight: bolder; height: 25px"/>
+							<input type="text" name="dianhua" placeholder="电话号码" style="font-weight: bolder; height: 25px"/>
+							<input type="text" name="fenji" placeholder="分机" style="font-weight: bolder; height: 25px"/>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" name="agree" value="1" unchecked="unchecked">设置为默认地址</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><a href="#"><div style="border-radius: 10px; text-align: center;  line-height: 40px; width: 60px; height: 40px; background-color: #FF4001; color: white; font-weight: bold;text-decoration: none; font-size: 20px; float: left;">保存</div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,847 @@
+/* 大图banner区域设置
+1、设置上内边距
+2、设置图片标签为行标签，用于控制宽高与位置
+3、设置标签外边距，作用为网页内左右自动居中
+*/
+
+.banner {
+    padding-top: 140px;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* 设置企业概况模块整体区域
+1、设置上外边距，主要控制该区域与banner的距离
+*/
+
+.company_gen {
+    margin-top: 1rem;
+}
+
+
+/* 设置企业概况模块大标题样式
+1、设置文本大小与颜色
+2、设置行高
+3、设置区域上下外边距，主要用于控制区域间的距离位置
+4、设置文本在区域内居中
+*/
+
+.company_gen>h1 {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+
+/* 设置企业概况模块段落样式
+1、设置文本大小与颜色
+2、设置区域外边距，主要用于控制区域间的距离位置
+*/
+
+.company_gen>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 设置企业概况模块图片列表样式
+1、设置宽度与溢出隐藏
+2、设置区域上下外边距，主要用于控制区域间的距离位置
+3、设置图片区域占总区域大小的30%
+4、设置图片列表向左排列
+5、设置图片列表间的距离控制
+*/
+
+.company_gen>ul {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.company_gen>ul>li {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.company_gen>ul>li>img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*指定第一个图片列表做外边距为0 
+ */
+
+.company_gen>ul>li:first-child {
+    margin-left: 0;
+}
+
+
+/* 设置企业概况模块图片列表中的标题样式
+1、设置字体大小与颜色
+2、设置文字在区域内居中
+*/
+
+.company_gen>ul>li>h1 {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* 设置企业价值观模块大标题样式
+1、设置文本大小与颜色
+2、设置行高
+3、设置区域上下外边距，主要用于控制区域间的距离位置
+4、设置文本在区域内居中
+*/
+
+.company_value>h1 {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+
+/* 设置企业价值观模块段落样式
+1、设置文本大小与颜色
+2、设置区域外边距，主要用于控制区域间的距离位置
+*/
+
+.company_value>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 设置企业价值观模块中的图文介绍整体区域样式
+1、设置外边距，用于控制区域间的距离排版
+*/
+
+.company_value .row {
+    margin: 1rem 0;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域样式
+1、设置盒子左浮动排列
+2、设置最小高度
+3、设置左右内边距
+4、设置区域盒子宽高继承取决与边框盒子
+*/
+
+.company_value .row>.col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域左边图片样式
+1、设置区域大小占总区域的25%
+2、设置图片最大100%展示
+3、设置图片高度自动
+4、图片不要边框
+*/
+
+.company_value .row>.col.left {
+    width: 25%;
+}
+
+.company_value .row>.col.left>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域右边文字样式
+1、设置区域大小占总区域的75%
+2、设置标题文字大小与颜色以及粗需等
+3、设置段落文字大小与颜色
+4、设置段落文字的外边距，用于控制段落区域的位置
+*/
+
+.company_value .row>.col.right {
+    width: 75%;
+}
+
+.company_value .row>.col.right>h1 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.company_value .row>.col.right>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 为模块前后设置清除浮动，防止图文排列不正常*/
+
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+/* 设置网页主体区域
+1、宽度设置
+2、上内边距，主要控制与头部区域的距离留白
+*/
+.full-screen {
+    width: 100%;
+    padding-top: 140px;
+}
+
+.container.re-con {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* 下载信息整体区域设置
+1、设置外边距
+*/
+.container .row{
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 1rem;
+}
+/* 手机图片与二维码下载两个区域盒子的通用设置
+1、最小高度设置
+2、左右内边距设置，主要控制盒子间的距离
+3、盒子间向左排列
+4、设置区域盒子宽高继承取决与边框盒子
+ */
+.container .col{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    box-sizing: border-box;
+
+}
+/* 设置手机图片盒子大小占整体的42%及图片的设置 */
+.container .col.left{
+    width: 42%;
+}
+.container .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 设置二维码下载区域盒子 
+1、宽度占整体的58%
+2、内容溢出隐藏
+3、上内边距设置
+*/
+.container .col.right{
+    width: 58%;  
+    overflow: hidden;
+    padding-top: 2rem;
+}
+/* 二维码图片与下载按钮区域设置
+1、内容区域内溢出隐藏
+2、图片区域设置40%大小，并设置浮动与按钮并列
+*/
+.container .right_text_top {
+    overflow: hidden;
+}
+.container .left_img {
+    width: 40%;
+    float: left;
+}
+/* 设置具体图片在图片区域内100%显示 */
+.container .left_img>img{
+    max-width: 100%;
+    height: auto;
+}
+/* 按钮设置
+1、按钮右浮动
+2、a标签设置为行标签，用于控制盒子大小
+3、区域背景色
+4、盒子四边圆角显示
+5、设置字体大小与颜色以及行高
+6、设置盒子的内外边距
+7、设置a标签为绝对定位，用于控制按钮上系统图标的位置存放
+*/
+.container .right_button {
+    width: 55%;
+    float: right;
+}
+.right_button>a {
+    display: block;
+    width: 54%;
+    height: 3.6rem;
+    position: relative;
+    background-color: #1db7f0;
+    border-radius: 30rem;
+    margin-top: 0.7rem;
+    font-size: 0.6rem;
+    color: #fff;
+    padding-left: 30%;
+    line-height:3.6rem;
+}
+/* 分别设置苹果下载与安装下载的图标显示
+1、设置span标签为内联式行标签，并设置盒子大小
+2、利用背景图定位在盒子内显示对应的图标
+3、设置背景图片显示大小
+4、设置相对定位，控制span标签对于a标签的位置
+*/
+.right_button .bg_pad {
+    display: inline-block;
+    width:3.6rem;
+    height: 3.6rem;
+    background: url(../images/apple.png) 0 center no-repeat;
+    background-size: 65% 65%;
+    position: absolute;
+    left: 20%;
+}
+.right_button .bg_android {
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    background: url(../images/android.png) 0 center no-repeat;
+    background-size: 65% 65%;
+    position: absolute;
+    left: 20%;
+}
+/* 下载信息段落设置
+1、字体颜色设置
+2、上外边距设置，用于控制与上方区域的留白距离
+*/
+.container .col.right>p {
+    font-size: 0.6rem;
+    color: #767676;
+    margin-top: 0.5rem;
+}
+
+/*页脚区域设置
+1、设置背景色
+2、设置内边距
+3、清除浮动 
+ */
+ .footer {
+    background-color: #f8f8f8;
+    padding: 1rem 0;
+    clear: both;
+}
+/* 设置版权内容
+1、设置内容过多时溢出隐藏
+2、设置文字在区域内居中
+3、设置span标签为内联式盒子，方便控制排版与大小
+4、设置字体大小与颜色
+ */
+.container .line_one {
+    overflow: hidden;
+    text-align: center;
+}
+.container .line_one>span {
+    display: inline-block;
+    margin: 0 0.3rem;
+    font-size: 0.6rem;
+    color: #000;
+}
+/* 联系信息部分设置
+1、设置内容过多时溢出隐藏
+2、设置文字在区域内居中
+3、设置宽度与右外边距，用于控制盒子间的距离
+*/
+.container .line_two {
+    overflow: hidden;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+.container .line_two>span{
+    font-size: 0.7rem;
+    width: 100%;
+    margin-right: 10px;
+}
+
+/* 导航部分整体样式设置
+1、背景设置，首选背景图片，若图片没有则使用背景色填充
+2、标签盒子不需要边框与圆角
+3、宽度100%
+*/
+.navbar{
+    background-image:url(../images/header_bg.png) !important;
+    background-position:0 0;
+    background-repeat: no-repeat;
+    border: none;
+    background: #2E2624;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+/* 联系方式部分设置
+1、区域宽度设置
+2、左右内外边距控制
+3、区域盒子具体宽高继承设置取决与边框盒子
+ */
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+/* 存放具体信息的盒子设置
+1、文字在区域内靠右排版
+2、高度设置
+3、行高设置
+4、区域盒子具体宽高继承设置取决与边框盒子
+ */
+.relation{
+    text-align: right;
+    height: 39px;
+    line-height: 39px;
+    box-sizing: border-box;
+}
+/* 两个span标签的控制
+1、变为行内联标签，即可并排显示同时可设置宽高
+2、字体大小和颜色设置
+ */
+.relation>.lianxi{
+    display:inline-block ;
+    font-size: 14px;
+    color: #fff;
+}
+/* 电话与qq号码前的两个图标设置
+1、分别利用背景图并控制其内边距与外边局，控制其存放的位置
+ */
+.relation>.telephone{
+    background: url("../images/heabder_teplhone.png") 0 center no-repeat;
+    padding-left: 20px;
+}
+.relation>.qq{
+    background: url("../images/header_qq.png")0 center no-repeat;
+    margin-left: 20px;
+    padding-left: 23px;
+}
+
+/* logo和导航整体区域设置
+1、上下边框设置，实现上下两条线
+2、区域高度
+3、区域内边距
+ */
+.nav-line{
+    border-top: 1px solid #1db7f0;
+    border-bottom: 1px solid #1db7f0;
+    height: 100px;
+    padding: 0 15px;
+}
+/*logo部分设置
+1、区域内边距设置
+2、 区域盒子具体宽高继承设置取决与边框盒子
+3、logo区域向左浮动
+ */
+.navbar-header {
+    padding: 20px 15px;
+    box-sizing: border-box;
+    float: left;
+}
+/* 导航部分设置
+1、区域右浮动
+2、内边距设置
+3、导航内容向左排列并设置内边距
+4、超链接文字字体设置
+*/
+.collapse{
+    float: right;
+    padding: 40px 15px;
+}
+.nav>li{
+    float: left;
+    padding-left: 28px;
+}
+.nav>li>a{
+    color: #fff !important;
+    font-size: 18px !important;
+    text-shadow: none !important;
+}
+/* 设置超链接鼠标移上效果
+1、文字颜色变黑色
+2、拥有黑色下划线
+*/
+.nav>li>a:hover{
+    color: #000 !important;
+    border-bottom: 1px solid #000;
+}
+
+/* 大图banner区域设置
+1、设置上内边距
+2、设置图片标签为行标签，用于控制宽高与位置
+3、设置标签外边距，作用为网页内左右自动居中
+*/
+
+.banner {
+    padding-top: 140px;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*优势信息整体区域设置
+1、设置区域宽度100% 
+ */
+
+.full-screen {
+    width: 100%;
+}
+
+
+/* 为什么选择我们模块区域中的大标题设置
+1、设置字体大小与颜色
+2、文字在区域内居中
+3、设置上外边距，主要控制与banner区域的留白距离
+ */
+
+.why>h1 {
+    font-size: 26px;
+    color: #50cffe;
+    text-align: center;
+    margin-top: 26px;
+}
+
+
+/* 为什么选择我们模块区域中的小标题设置
+1、设置字体大小与颜色
+2、文字在区域内居中
+3、设置上外边距，主要控制与大标题区域的留白距离
+ */
+
+.why>h2 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 1rem;
+}
+
+
+/* 为什么选择我们模块区域中的具体信息设置
+1、设置字体大小与颜色
+2、设置段落文字缩紧2自负
+3、设置上外边距，主要控制段落区域间的距离
+ */
+
+.why>p {
+    font-size: 15px;
+    color: #000;
+    text-indent: 2em;
+    margin: 15px 0;
+}
+
+
+/* 为什么选择我们模块区域中的加粗信息设置
+1、设置字体大小与颜色
+2、设置右内边距
+ */
+
+.why>p>strong {
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+
+/* 犀牛付代理商特权模块区域中的小标题信息设置
+1、设置字体大小与颜色
+2、设置行高
+3、设置左内边距
+4、设置内容溢出隐藏
+ */
+
+.daili>h2 {
+    position: relative;
+    height: 18px;
+    line-height: 2rem;
+    padding-left: 2rem;
+    overflow: hidden;
+}
+
+
+/* 犀牛付代理商特权模块区域中的提示信息设置
+1、设置span标签为行标签，用于设置宽高
+ */
+
+.daili>h2>span {
+    display: block;
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+
+/*  犀牛付代理商特权模块区域中的小标题前的图标设置
+1、使用背景图并设置不重复
+2、设置背景大小
+ */
+
+h2.join_pt>span {
+    background: url("../images/join_1.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_yz>span {
+    background: url("../images/join_2.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_cy>span {
+    background: url("../images/join_3.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_quyu>span {
+    background: url("../images/join_4.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+h2.join_sj>span {
+    background: url("../images/join_5.png") 0 center no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 设置如何加盟犀牛付模块整体区域
+1、外边距设置，主要控制该区域的位置
+*/
+
+.row {
+    margin-top: 1.5rem;
+    margin-bottom: 16rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+/* 设置如何加盟犀牛付模块每个步骤区域样式
+1、设置区域间向左排列
+2、设置每个区域宽度占整体的25%
+3、设置绝对定位，主要用于其中的图片排放
+4、设置区域盒子宽高继承取决与边框盒子
+*/
+
+.row .col {
+    float: left;
+    width: 25%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+/* 设置如何加盟犀牛付模块中的图片样式*/
+
+.row .col>img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* 设置如何加盟犀牛付模块标题样式
+1、设置字体大小与颜色
+2、设置文字在区域内居中
+*/
+
+.row .col>h1 {
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* 设置如何加盟犀牛付模块中指定图片的样式
+1、设置相对定位，控制图片位置
+*/
+
+.row .col>img.step {
+    position: absolute;
+    top: 30%;
+    left: 92%;
+}
+
+/* 网页主体区域设置
+1、宽度设置
+2、上内边距设置，主要用于控制与头部区域的留白距离
+ */
+
+ .full-screen {
+    width: 100%;
+    padding-top: 173px;
+}
+
+
+/* 公告大标题设置
+1、字体大小与颜色设置
+2、内容在区域中居中
+*/
+
+.notice_title {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+}
+
+
+/* 公告具体信息部分设置
+1、内边距设置
+2、内容在区域内溢出隐藏
+*/
+
+.article {
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+
+
+/* 公告信息小标题的字体大小颜色设置 */
+
+.article>h2>a {
+    font-size: 18px;
+    color: #000;
+}
+
+
+/*  公告信息小标题鼠标移上变化颜色 */
+
+.article>h2>a:hover {
+    color: #1db7f0;
+}
+
+
+/* 公告信息具体内容设置
+1、设置内容在区域内溢出隐藏
+2、设置文本溢出时用省略号代替
+3、设置字体大小与颜色
+4、设置段落区域上下外边距，用于控制区域间的距离
+5、设置允许在单词内换行
+*/
+
+.article>p {
+    overflow: hidden;
+    width: 100%;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* 公告信息时间部分设置
+1、设置标签向右浮动
+2、设置字体大小与颜色
+*/
+
+.article>span {
+    float: right;
+    font-size: 0.35rem;
+    color: #000;
+}
+
+
+/*分页结构部分设置
+1、设置文本在区域内居中 
+2、设置宽度100%
+3、设置上下外边距，用于控制区域间的距离
+ */
+
+.dede_pages {
+    text-align: center;
+    margin-top: 0.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+/* 分页列表设置
+1、设置文本在区域内居中 
+2、设置溢出隐藏
+3、列表向左排列
+4、设置行高与内边距
+5、设置右外边距，用于列表间的距离控制
+6、设置边框
+7、设置字体颜色以及鼠标移上后的变色
+*/
+
+.dede_pages>ul {
+    text-align: center;
+    overflow: hidden;
+}
+
+.dede_pages>ul>li {
+    float: left;
+    line-height: 28px;
+    margin-right: 6px;
+    padding: 0px 8px;
+    border: 1px solid #E9E9E9;
+}
+
+.dede_pages>ul>li>a {
+    color: #333;
+}
+
+.dede_pages>ul>li>a:hover {
+    color: #1db7f0;
+}
+
+/*清除默认的样式*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+}
+/* 图片默认不要边框 */
+img{
+    border: 0;
+    vertical-align: middle;
+}
+/* 超链接标签不要有下划线 */
+a{
+    text-decoration:none ;
+}
+
+a:focus,
+a:hover{
+    text-decoration: none !important;
+}
+/* 列表标签不要默认的图标 */
+ul{
+    list-style: none;
+}

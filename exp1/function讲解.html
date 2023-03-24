@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+	// js中function拥有最高的编译优先级
+	// 语法：function 函数名（形参列表）{}
+	function sayHello(){
+		console.log("你好啊！")
+		// return "我是sayhello的返回值啊";
+	}
+	// 调用
+	sayHello();
+	
+	// 匿名函数
+	(function(){
+		console.log("我是匿名函数")
+	})();
+	// 在js中作用域是以function划分的，
+	// 在js中可以将变量放在function中，将变量变为局部变量使用
+	(function(){
+		for(var i=0;i<10;i++){
+			console.log(i)
+		}
+	})();
+	// console.log(i)  此处无法获取i的值
+	// function是否有返回值取决于内部是否有return操作
+	console.log(sayHello())
+	
+	function sayBye(name){
+		console.log(name+"你好啊！")
+		// return "我是sayhello的返回值啊";
+	}
+	sayBye("tom")
+	function sayHi(){
+		console.log(arguments.length)
+		console.log(arguments[0])
+		console.log("你好啊！")
+		// return "我是sayhello的返回值啊";
+	}
+	sayHi("张三",21)
+	
+	// 计算器案例
+	function getSum(){
+		// 声明一个变量，用来存储计算后的最终结果
+		var sum=0;
+		for(var i in arguments){
+			sum+=arguments[i]
+		}
+		console.log(sum)						
+	}
+	getSum(1,2,5,2)
+	
+	</script>
+</html>

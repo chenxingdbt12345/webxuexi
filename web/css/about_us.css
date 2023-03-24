@@ -1,0 +1,215 @@
+/* 大图banner区域设置
+1、设置上内边距
+2、设置图片标签为行标签，用于控制宽高与位置
+3、设置标签外边距，作用为网页内左右自动居中
+*/
+
+.banner {
+    padding-top: 140px;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* 设置企业概况模块整体区域
+1、设置上外边距，主要控制该区域与banner的距离
+*/
+
+.company_gen {
+    margin-top: 1rem;
+}
+
+
+/* 设置企业概况模块大标题样式
+1、设置文本大小与颜色
+2、设置行高
+3、设置区域上下外边距，主要用于控制区域间的距离位置
+4、设置文本在区域内居中
+*/
+
+.company_gen>h1 {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+
+/* 设置企业概况模块段落样式
+1、设置文本大小与颜色
+2、设置区域外边距，主要用于控制区域间的距离位置
+*/
+
+.company_gen>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 设置企业概况模块图片列表样式
+1、设置宽度与溢出隐藏
+2、设置区域上下外边距，主要用于控制区域间的距离位置
+3、设置图片区域占总区域大小的30%
+4、设置图片列表向左排列
+5、设置图片列表间的距离控制
+*/
+
+.company_gen>ul {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.company_gen>ul>li {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.company_gen>ul>li>img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*指定第一个图片列表做外边距为0 
+ */
+
+.company_gen>ul>li:first-child {
+    margin-left: 0;
+}
+
+
+/* 设置企业概况模块图片列表中的标题样式
+1、设置字体大小与颜色
+2、设置文字在区域内居中
+*/
+
+.company_gen>ul>li>h1 {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* 设置企业价值观模块大标题样式
+1、设置文本大小与颜色
+2、设置行高
+3、设置区域上下外边距，主要用于控制区域间的距离位置
+4、设置文本在区域内居中
+*/
+
+.company_value>h1 {
+    font-size: 26px;
+    color: #1db7f0;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+
+/* 设置企业价值观模块段落样式
+1、设置文本大小与颜色
+2、设置区域外边距，主要用于控制区域间的距离位置
+*/
+
+.company_value>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 设置企业价值观模块中的图文介绍整体区域样式
+1、设置外边距，用于控制区域间的距离排版
+*/
+
+.company_value .row {
+    margin: 1rem 0;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域样式
+1、设置盒子左浮动排列
+2、设置最小高度
+3、设置左右内边距
+4、设置区域盒子宽高继承取决与边框盒子
+*/
+
+.company_value .row>.col {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域左边图片样式
+1、设置区域大小占总区域的25%
+2、设置图片最大100%展示
+3、设置图片高度自动
+4、图片不要边框
+*/
+
+.company_value .row>.col.left {
+    width: 25%;
+}
+
+.company_value .row>.col.left>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+
+/* 设置企业价值观模块中的图文介绍区域右边文字样式
+1、设置区域大小占总区域的75%
+2、设置标题文字大小与颜色以及粗需等
+3、设置段落文字大小与颜色
+4、设置段落文字的外边距，用于控制段落区域的位置
+*/
+
+.company_value .row>.col.right {
+    width: 75%;
+}
+
+.company_value .row>.col.right>h1 {
+    font-size: 18px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.company_value .row>.col.right>p {
+    font-size: 15px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+
+/* 为模块前后设置清除浮动，防止图文排列不正常*/
+
+.row:after,
+.row:before {
+    display: table;
+    content: " ";
+    clear: both;
+}

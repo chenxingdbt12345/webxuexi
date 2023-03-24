@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="http://www.baidu.com" method="get">
+		<table border="3" width="700px" bgcolor="littleblue">
+			<!-- 1 -->
+			<tr>
+				<td>用户名：</td>
+				<td width="550px"><input type="text" name="username"></td>
+			</tr>
+			<!-- 2 -->
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="password"/></td>
+			</tr>
+			<!-- 3 -->
+			<tr>
+				<td>年龄：</td>
+				<td><input type="number" name="age" min="18" max="65"/></td>
+			</tr>
+			<!-- 4 -->
+			<tr>
+				<td>性别：</td>
+				<td><input type="radio" name="sex" value="1"/>男 &nbsp; <input type="radio" name="sex" value="1"/>女 </td>
+			</tr>
+			<!-- 5 -->
+			<tr>
+				<td>选择服务器：</td>
+				<td><select name="severs">
+				<option selected="selected" disabled="disabled">请选择</option>
+				<optgroup label="东部大区">
+					<option value="1">111</option>
+					<option value="2">222</option>
+					<option value="3">333</option>
+				</optgroup>
+				<optgroup label="西部大区">
+					<option value="4">444</option>
+					<option value="5">555</option>
+					<option value="6">666</option>
+				</optgroup>
+				</select></td>
+			</tr>
+			<!-- 6 -->
+			<tr>
+				<td>习惯打法：</td>
+				<td><input type="checkbox" name="way1" value="1" />无脑冲锋
+				<input type="checkbox" name="way2" value="2" />猥琐打钱
+				<input type="checkbox" name="way3" value="3" />悄悄偷塔
+				<input type="checkbox" name="way4" value="4" />善于游走</td>
+			</tr>
+			<!-- 7 -->
+			<tr>
+				<td>上传头像：</td>
+				<td><input type="file" name="picture" value="1"/></td>
+			</tr>
+			<!-- 8 -->
+			<tr>
+				<td height="300px">个人简介：</td>
+				<td><textarea name="introduction" rows="20" cols="80"></textarea></td>
+			</tr>
+			<!-- 9 -->
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" value="提交"/>&nbsp; &nbsp; &nbsp; &nbsp;<input type="reset" name="reset" value="重置"/></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+</html>
